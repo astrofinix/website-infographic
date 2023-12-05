@@ -34,7 +34,7 @@ body {
   position: fixed;
   right: -4vw;
   top: 0;
-  background: #000000;
+  background: #c4eefa;
   z-index: 21000;
   transition: 0.5s;
   display: flex;
