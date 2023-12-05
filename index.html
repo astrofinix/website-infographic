@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="./js/script1.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="./img/web_logo.png" rel="icon" />
+    <title>Sa Loob ng Paglaban</title>
+  </head>
+  <body>
+    <div class="desktop-view" id="desktop-view">
+      <img src="./img/webview.png" class="webview_logo" id="webview_logo"/><br>
+      <span class="disclaimer_intro inter_font text opacity-1" style="letter-spacing: -0.6px; color: #f4f4f4;">
+        For an immersive experience,<br>use desktop or laptop for website viewing.
+      </span>
+      <span class="mar_font webview-intro">Sa Loob ng Paglaban</span>
+    </div>
+  </body>
+</html>
