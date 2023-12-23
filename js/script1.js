@@ -1,41 +1,41 @@
 
-// if (
-//     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-//       navigator.userAgent
-//     )
-//   ) {
-//     console.log("test");
-//     document.getElementById("desktop-view").style.display = "flex";
-//     document.getElementById("navbar_logo").style.display = "none";
-//     document.getElementById("sideNav").style.display = "none";
-//     document.body.style.overflow = "hidden";
-//     document.addEventListener(
-//       "touchmove",
-//       function (event) {
-//         event.preventDefault();
-//       },
-//       { passive: false }
-//     );
-//     console.log("mobile --> redirect");
-//   } else {
-//     console.log("proceed");
-//     document.getElementById("desktop-view").style.display = "none";
-//     document.getElementById("navbar_logo").style.display = "block";
-//     document.getElementById("sideNav").style.display = "block";
-//     // For non-mobile devices, do nothing
+if (
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    )
+  ) {
+    console.log("test");
+    document.getElementById("desktop-view").style.display = "flex";
+    document.getElementById("navbar_logo").style.display = "none";
+    document.getElementById("sideNav").style.display = "none";
+    document.body.style.overflow = "hidden";
+    document.addEventListener(
+      "touchmove",
+      function (event) {
+        event.preventDefault();
+      },
+      { passive: false }
+    );
+    console.log("mobile --> redirect");
+  } else {
+    console.log("proceed");
+    document.getElementById("desktop-view").style.display = "none";
+    document.getElementById("navbar_logo").style.display = "block";
+    document.getElementById("sideNav").style.display = "block";
+    // For non-mobile devices, do nothing
     
-//   }
+  }
 
 var menuBtn = document.getElementById("menuBtn");
 var sideNav = document.getElementById("sideNav");
 
-sideNav.style.right = "-40vw";
+sideNav.style.right = "-40rem";
 
 menuBtn.onclick = function () {
-  if (sideNav.style.right == "-40vw") {
+  if (sideNav.style.right == "-40rem") {
     sideNav.style.right = "0";
   } else {
-    sideNav.style.right = "-40vw";
+    sideNav.style.right = "-40rem";
   }
 };
 document.querySelectorAll(".confetti").forEach((el) => {
