@@ -303,6 +303,31 @@ a {
   bottom: -1px;
   transition: 0.3s;
 }
+.navlinkb:hover {
+  color: white;
+}
+.navlinkb:hover:after {
+  width: 100%;
+}
+.navlinkb {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.5px;
+  padding: 0 3px;
+  z-index: 1003;
+  animation: 1s ease-out 0s 1 leftAnimation;
+}
+.navlinkb:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -1px;
+  transition: 0.3s;
+}
 .block_question {
   width: 100%;
   height: 150vh;
