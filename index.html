@@ -3,26 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="text/javascript" src="./js/script1.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/plugins/animation.gsap.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      module.exports = {
-        theme: {
-          extend: {
-            colors: {
-              green: "#004542",
-              lgreen: "#ddf6e6", // Changed from secgreen to lgreen for clarity
-              violet: "#5c47a0",
-              lviolet: "#deddff",
-              white: "#ffffff",
-              red: "#ffccd3",
-              lred: "#ffdce0",
-              yellow: "#fff5e3",
-            },
-          },
-        },
-      };
-    </script>
+    <script type="text/javascript" src="./js/script1.js" defer></script>
+    <script type="text/javascript" src="./js/gsap1.js" defer></script>
     <link rel="stylesheet" href="./css/styling.css" />
     <link href="./img/favicon.png" rel="icon" />
     <title>Sa Loob ng Paglaban</title>
@@ -38,46 +35,76 @@
     <nav id="sideNav">
       <ul>
         <li class="navbar-m">
-          <a href="#ch1" class="inter font-bold nav_text1"
-            ><span class="font-normal">1. </span> The Seductive Allure</a
+          <a href="#ch1" class="inter font-bold nav_text1 navlink"
+            ><span class="font-normal">1. </span> Exploring the Dark</a
           >
         </li>
         <li>
-          <a href="#ch2" class="inter font-bold nav_text2"
+          <a href="#ch2" class="inter font-bold nav_text2 navlink"
             ><span class="font-normal">2. </span> The Tug of War</a
           >
         </li>
         <li>
-          <a href="#ch3" class="inter font-bold nav_text3"><span class="font-normal">3. </span> Emerging into Light</a>
+          <a href="#ch3" class="inter font-bold nav_text3 navlink"><span class="font-normal">3. </span> Emerging into Light</a>
         </li>
         <li class="credit_nav">
-          <a href="#ch3" class="inter font-normal nav_text3">Credits</a>
+          <a href="#ch3" class="inter font-normal nav_text3 navlink">Credits</a>
         </li>
       </ul>
     </nav>
     <div id="menuBtn">
       <img src="./img/psych101logo.webp" id="navbar_logo" alt="logo" class="navbar_logo" />
     </div>
-    <article class="introductions text-center">
-      <!-- <span class="vina text-green" style="font-size: 12rem;">SA LOOB NG PAGLABAN</span>
-      <br></be><span class="text-4xl inter text-green">A Journey into the Mind of Addiction
-      </span>
-      <img src="./img/bg-intro.jpg" class="relative">
-      <img src="./img/bg-intro2.webp" class="relative"> -->
-      <div class="relative">
+    <article class="intro">
+      <div class="image-container relative">
         <img src="./img/bg-intro.jpg" class="w-full">
-        <img src="./img/bg-intro2.webp" class="w-full absolute top-1/4 left-0">
-        <span class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 vina text-green" style="font-size: 8rem;">SA LOOB NG PAGLABAN</span>
-        <span class="absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl inter text-green">A Journey into the Mind of Addiction</span>
-        <span>SCROLL SLOWLY FOR THE BEST EXPERIENCE</span>
+        <img src="./img/bg-intro2.webp" class="dynamic-intro w-full">
+        <div class="content-container">
+          <span class="vina text-green" style="font-size: 10rem;">SA LOOB NG PAGLABAN</span><br>
+          <span class="text-xl inter text-green">A fairer, healthier, and better understanding of addiction is within reach. <br>
+          But only if we are willing to know and empathize of their struggles</span><br>
+        </div>
       </div>
-      <span>This narrative journey delves into the psychological aspects of addiction, unraveling its impact on individuals and communities. We'll navigate what addiction means, its effects, and practical steps toward a healthier future for all. <span>
     </article>
+    <div class="foreword inter text-4xl text-center pr-96 pl-96  bg-green text-lgreen">
+      <span class="text-lgreen">Discovering addiction's complexities is like exploring different landscapes in our minds. It's a deviation influenced by diverse factors. From stress storms to learned scripts, this narrative experience unveils how individuals cope and navigate towards resilience and recovery.
+      </span>
+      </div>
+      <article class="ch3-3">
+        <div class="block_question bg-blue">
+          <div class="parts text_1 vina">THE STIGMA AROUND ADDICTION DOES NOT MAKE OUR COMMUNITIES SAFER
+          </div>
+          <div class="parts text_2 vina">IT TEARS FAMILIES APART AND WORSENS THEIR STRUGGLE</div>
+          <div class="parts text_3 vina">TAKING AWAY VITAL SUPPORT FROM THOSE WHO NEED IT</div>
+          <div class="parts text_4 vina">IT DOES NOT HAVE TO BE THIS WAY</div>
+        </div>
+        <div class="h-screen"></div>
+      </article>
     <article class="ch1-1">
-      <div class="ch-intro h-screen">
-        <span  class="gara font-bold text-6xl">Chapter 1</span>
+      <div class="ch-intro bg-lgreen h-screen">
+        <img src="./img/line.webp" class="h-48 o-0 uline mt-10 mb-10" alt="line">
+        <span  class="gara o-0 ch1 chapter-text font-normal text-3xl text-green">Chapter 1</span>
+        <span  class="gara o-0 ch1-desc font-normal ch-text text-green" style="font-size: 9rem;">EXPLORING THE DARK</span>
+        <img src="./img/line.webp" class="h-48 o-0 lline mb-10" alt="line">
       </div>
     </article>
+    <article class="ch2-1">
+      <div class="ch-intro2 bg-blue h-screen">
+        <img src="./img/line.webp" class="h-48 o-0 uline2 mt-10 mb-10" alt="line">
+        <span  class="gara o-0 ch2 chapter-text font-normal text-3xl text-green">Chapter 2</span>
+        <span  class="gara o-0 ch2-desc font-normal ch-text text-green" style="font-size: 9rem;">THE TUG OF WAR</span>
+        <img src="./img/line.webp" class="h-48 o-0 lline2 mb-10" alt="line">
+      </div>
+    </article>
+    <article class="ch3-1">
+      <div class="ch-intro3 bg-lviolet h-screen">
+        <img src="./img/line.webp" class="h-48 o-0 uline3 mt-10 mb-10" alt="line">
+        <span  class="gara o-0 ch3 chapter-text font-normal text-3xl text-green">Chapter 3</span>
+        <span  class="gara o-0 ch3-desc font-normal ch-text text-green" style="font-size: 9rem;">EMERGING INTO LIGHT</span>
+        <img src="./img/line.webp" class="h-48 o-0 lline3 mb-10" alt="line">
+      </div>
+    </article>
+
     <article class="credit-end bg-green text-center" style="height: 130vh;">
       <span class="vina text-lgreen" style="font-size: 14rem;">CREDITS</span>
       <p class="credits white text-lgreen inter opacity-60">Narrative by:</p>
@@ -129,9 +156,6 @@
             </div>
             </div>
           </article>
-          <div id="menuBtn">
-            <img src="./img/web_logo.png" id="navbar_logo" alt="logo" class="navbar_logo" />
-          </div>
     </article>
     </body>
 </html>
