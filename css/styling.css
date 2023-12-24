@@ -10,12 +10,17 @@
   --yellow: #fff5e3;
 ;
 }
+@font-face {
+  font-family: "Maragsa";
+  src: url("../font/Maragsâ-Display.woff2") format("woff2");
+}
 .inter {
   font-family: "Inter Tight", "sans-serif";
   letter-spacing: -0.6px;
 }
 .vina {
   font-family: "Vina Sans";
+  letter-spacing: -6px;
 }
 .gara {
   font-family: "Cormorant Garamond";
@@ -175,4 +180,117 @@
   text-align: center;
   margin-top: 10%;
   font-size: 4rem;
+}
+.text-green {
+  color: var(--green);
+}
+
+.text-lgreen {
+  color: var(--lgreen);
+}
+
+.text-violet {
+  color: var(--violet);
+}
+
+.text-lviolet {
+  color: var(--lviolet);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-red {
+  color: var(--red);
+}
+
+.text-lred {
+  color: var(--lred);
+}
+
+.text-yellow {
+  color: var(--yellow);
+}
+.bg-green {
+  background-color: var(--green);
+}
+
+.bg-lgreen {
+  background-color: var(--lgreen);
+}
+
+.bg-violet {
+  background-color: var(--violet);
+}
+
+.bg-lviolet {
+  background-color: var(--lviolet);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-red {
+  background-color: var(--red);
+}
+
+.bg-lred {
+  background-color: var(--lred);
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+.mar_font {
+  font-family: "Maragsa", "Perpetua", "Times New Roman", serif;
+}
+.footer {
+  padding-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.credits_ch {
+  background-color: var(--black);
+}
+.jpean {
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+}
+.navlink:hover {
+  color: #ffffff;
+}
+.navlink:hover:after {
+  width: 100%;
+}
+.navlink {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  padding: 0 3px;
+  z-index: 1003;
+  animation: 1s ease-out 0s 1 leftAnimation;
+}
+.navlink:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -1px;
+  transition: 0.3s;
 }

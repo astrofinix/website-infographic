@@ -6,12 +6,18 @@
     <script type="text/javascript" src="./js/script1.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      tailwind.config = {
+      module.exports = {
         theme: {
           extend: {
             colors: {
-              prigreen: "#004542",
-              secgreen: "#ddf6e6",
+              green: "#004542",
+              lgreen: "#ddf6e6", // Changed from secgreen to lgreen for clarity
+              violet: "#5c47a0",
+              lviolet: "#deddff",
+              white: "#ffffff",
+              red: "#ffccd3",
+              lred: "#ffdce0",
+              yellow: "#fff5e3",
             },
           },
         },
@@ -52,5 +58,80 @@
     <div id="menuBtn">
       <img src="./img/psych101logo.webp" id="navbar_logo" alt="logo" class="navbar_logo" />
     </div>
-  </body>
+    <article class="introductions text-center">
+      <!-- <span class="vina text-green" style="font-size: 12rem;">SA LOOB NG PAGLABAN</span>
+      <br></be><span class="text-4xl inter text-green">A Journey into the Mind of Addiction
+      </span>
+      <img src="./img/bg-intro.jpg" class="relative">
+      <img src="./img/bg-intro2.webp" class="relative"> -->
+      <div class="relative">
+        <img src="./img/bg-intro.jpg" class="w-full">
+        <img src="./img/bg-intro2.webp" class="w-full absolute top-1/4 left-0">
+        <span class="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 vina text-green" style="font-size: 8rem;">SA LOOB NG PAGLABAN</span>
+        <span class="absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl inter text-green">A Journey into the Mind of Addiction</span>
+        <span>SCROLL SLOWLY FOR THE BEST EXPERIENCE</span>
+      </div>
+      <span>This narrative journey delves into the psychological aspects of addiction, unraveling its impact on individuals and communities. We'll navigate what addiction means, its effects, and practical steps toward a healthier future for all. <span>
+    </article>
+    <article class="ch1-1">
+      <div class="ch-intro h-screen">
+        <span  class="gara font-bold text-6xl">Chapter 1</span>
+      </div>
+    </article>
+    <article class="credit-end bg-green text-center" style="height: 130vh;">
+      <span class="vina text-lgreen" style="font-size: 14rem;">CREDITS</span>
+      <p class="credits white text-lgreen inter opacity-60">Narrative by:</p>
+            <span class="credit_name center text inter_font inter font-bold text-2xl text-lgreen">
+              Jude Gatchalian<br />Des Sibuma<br />Red Subijiano
+            </span>
+            <p
+              class="outro inter_font disclaimer text inter mt-40 pl-80 pr-80 text-2xl"
+              style="letter-spacing: -0.6px; color: #f4f4f4; opacity: 1">
+              "Sa Loob ng Paglaban" is a Psychological Learning Project that is a
+              visually-engaging submission to the Psychology 101 course in the
+              University of the Philippines. This project reflects the author's
+              strong dedication to pursuing a better reform for Philippine
+              Education, not just for themselves but for society as a whole.
+            </p>
+            <p
+              class="disclaimer inter_font text inter text-lgreen mt-40 pr-60 pl-60 opacity-40"
+              style="letter-spacing: -0.6px">
+              All materials used are for educational and non-profit purposes
+              only. Any copyright material mirrored on this site is intended for
+              private personal study. All original photographs and articles are
+              copyright to their respective owners. Copyright owners may, if
+              they wish, request to have material removed by leaving a comment
+              on the relevant page. The materials archived, stored,and presented
+              here, are copyrighted by their respective contributors, and may
+              not be saved, re-transmitted, republished, or reformatted by any
+              means, electronic or mechanical. This site offers broad public
+              access to these materials exclusively as a contribution to
+              education and scholarship, and for the private, non-profit use of
+              the academic community.
+            </p>
+            <div class="footer text-white">
+              <p class="ref inter_font" style="float: left">MADE BY</p>
+              <p class="jpean white mar_font" style="float: left">Jude Péan</p>
+              <div class="space-div"></div>
+              <div class="refer">
+              <a
+                class="ref mar_font navlink"
+                href="./pages/credits.html"
+                target="_blank"
+                style="
+                  float: left;
+                  font-size: 3rem;
+                  font-weight: 900;
+                  margin-left: 30vw;
+                "
+                >Bibliography</a
+              ></div>
+            </div>
+            </div>
+          </article>
+          <div id="menuBtn">
+            <img src="./img/web_logo.png" id="navbar_logo" alt="logo" class="navbar_logo" />
+          </div>
+    </article>
+    </body>
 </html>
