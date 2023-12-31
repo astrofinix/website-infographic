@@ -44,85 +44,85 @@ document.querySelectorAll(".confetti").forEach((el) => {
   });
 });
 
-$(function () {
-  $("a[href*=#]:not([href=#])").click(function () {
-    if (
-      location.pathname.replace(/^\//, "") ==
-        this.pathname.replace(/^\//, "") &&
-      location.hostname == this.hostname
-    ) {
-      var target = $(this.hash);
-      target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
-      if (target.length) {
-        $("html,body").animate(
-          {
-            scrollTop: target.offset().top,
-          },
-          700
-        );
-        return false;
-      }
-    }
-  });
-});
+// $(function () {
+//   $("a[href*=#]:not([href=#])").click(function () {
+//     if (
+//       location.pathname.replace(/^\//, "") ==
+//         this.pathname.replace(/^\//, "") &&
+//       location.hostname == this.hostname
+//     ) {
+//       var target = $(this.hash);
+//       target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+//       if (target.length) {
+//         $("html,body").animate(
+//           {
+//             scrollTop: target.offset().top,
+//           },
+//           700
+//         );
+//         return false;
+//       }
+//     }
+//   });
+// });
 
-if ($("#back-to-top").length) {
-  var scrollTrigger = 100, // px
-    backToTop = function () {
-      var scrollTop = $(window).scrollTop();
-      if (scrollTop > scrollTrigger) {
-        $("#back-to-top").addClass("show");
-      } else {
-        $("#back-to-top").removeClass("show");
-      }
-    };
-  backToTop();
-  $(window).on("scroll", function () {
-    backToTop();
-  });
-  $("#back-to-top").on("click", function (e) {
-    e.preventDefault();
-    $("html,body").animate(
-      {
-        scrollTop: 0,
-      },
-      700
-    );
-  });
-}
-var vwWidth = window.innerWidth;
+// if ($("#back-to-top").length) {
+//   var scrollTrigger = 100, // px
+//     backToTop = function () {
+//       var scrollTop = $(window).scrollTop();
+//       if (scrollTop > scrollTrigger) {
+//         $("#back-to-top").addClass("show");
+//       } else {
+//         $("#back-to-top").removeClass("show");
+//       }
+//     };
+//   backToTop();
+//   $(window).on("scroll", function () {
+//     backToTop();
+//   });
+//   $("#back-to-top").on("click", function (e) {
+//     e.preventDefault();
+//     $("html,body").animate(
+//       {
+//         scrollTop: 0,
+//       },
+//       700
+//     );
+//   });
+// }
+// var vwWidth = window.innerWidth;
 
-var controller = new ScrollMagic.Controller();
+// var controller = new ScrollMagic.Controller();
 
-//scene 1
-//for parallax scroll
-var parallaxScrolling = new TimelineMax()
-  .to(".div1", 1, {y: 100, ease: Power1.easeOut})
+// //scene 1
+// //for parallax scroll
+// var parallaxScrolling = new TimelineMax()
+//   .to(".div1", 1, {y: 100, ease: Power1.easeOut})
 
-new ScrollMagic.Scene({
-  triggerElement: ".div1",
-  duration: "100%",
-  offset: 0,
-  triggerHook: 0
-})
-.setTween(parallaxScrolling)
-.addTo(controller)
+// new ScrollMagic.Scene({
+//   triggerElement: ".div1",
+//   duration: "100%",
+//   offset: 0,
+//   triggerHook: 0
+// })
+// .setTween(parallaxScrolling)
+// .addTo(controller)
 
-//scene 2 with horizontal scroll
-//for horizontal scrolling
-var horizontalSlide = new TimelineMax()
-  .to(".div2", 0.2,   {x: 0, ease: Power1.easeOut}, )
-  .to(".div2", 1,   {x: -vwWidth, ease: Power1.easeOut}, )	
-  .to(".div2", 0.2,   {x: -vwWidth, ease: Power1.easeOut}, )
-  .to(".div2", 1,   {x: -2*vwWidth, ease: Power1.easeOut}, )
-  .to(".div2", 0.2,   {x: -2*vwWidth, ease: Power1.easeOut}, )
+// //scene 2 with horizontal scroll
+// //for horizontal scrolling
+// var horizontalSlide = new TimelineMax()
+//   .to(".div2", 0.2,   {x: 0, ease: Power1.easeOut}, )
+//   .to(".div2", 1,   {x: -vwWidth, ease: Power1.easeOut}, )	
+//   .to(".div2", 0.2,   {x: -vwWidth, ease: Power1.easeOut}, )
+//   .to(".div2", 1,   {x: -2*vwWidth, ease: Power1.easeOut}, )
+//   .to(".div2", 0.2,   {x: -2*vwWidth, ease: Power1.easeOut}, )
 
-new ScrollMagic.Scene({
-  triggerElement: ".div2",
-  duration: "160%",
-  offset: 0,
-  triggerHook: -0.02
-})
-.setPin('.div2')
-.setTween(horizontalSlide)
-.addTo(controller)
+// new ScrollMagic.Scene({
+//   triggerElement: ".div2",
+//   duration: "160%",
+//   offset: 0,
+//   triggerHook: -0.02
+// })
+// .setPin('.div2')
+// .setTween(horizontalSlide)
+// .addTo(controller)

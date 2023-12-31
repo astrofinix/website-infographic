@@ -3,23 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script> -->
     <script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/plugins/animation.gsap.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js" defer></script>
+    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="text/javascript" src="./js/script1.js" defer></script>
+    <script type="text/javascript" src="./js/brain.js" defer></script>
     <script type="text/javascript" src="./js/gsap1.js" defer></script>
+    <script type="text/javascript" src="./js/card_scroll.js" defer></script>
     <link rel="stylesheet" href="./css/styling.css" />
     <link href="./img/favicon.png" rel="icon" />
     <title>Sa Loob ng Paglaban</title>
@@ -60,8 +63,8 @@
         <img src="./img/bg-intro.jpg" class="w-full">
         <img src="./img/bg-intro2.webp" class="dynamic-intro w-full">
         <div class="content-container">
-          <span class="vina text-green" style="font-size: 10rem;">SA LOOB NG PAGLABAN</span><br>
-          <span class="text-xl inter text-green">A fairer, healthier, and better understanding of addiction is within reach. <br>
+          <p class="vina text-green" style="font-size: 10rem; line-height: 0rem;">SA LOOB NG</p><span class="vina text-green" style="font-size: 15rem;">PAGLABAN</span><br>
+          <span class="text-xl inter text-green" style="margin-top: 40rem;">A fairer, healthier, and better understanding of addiction is within reach. <br>
           But only if we are willing to know and empathize of their struggles</span><br>
         </div>
       </div>
@@ -88,6 +91,112 @@
         <img src="./img/line.webp" class="h-48 o-0 lline mb-10" alt="line">
       </div>
     </article>
+    <div class="image-container1">
+      <img src="./img/introductory.webp" alt="Description of the image">
+      <div class="text-overlay">
+        <span class="vina text-green text-9xl">A JOURNEY INSIDE THE MIND OF ADDICTION</span>
+      </div>
+    </div>
+    <div class="centered-container bg-lviolet">
+      <span class="centered-text text-green vina text-9xl">YOU TRIED IT ONCE.</span><BR>
+      <span class="centered-text text-green inter text-2xl">Perhaps at a party, given to you by a friend,<br>or maybe you got it at your own will
+      </span>
+    </div>
+    <div class="centered-container2 bg-lviolet">
+      <div class="circle1 centered_elements"></div>
+      <img src="./img/smokedrunk.png" class="centered_elements w-3/5 z-40 img1"alt="Description of the image">
+    </div>
+    <article>
+      <div id="banner">
+        <div class="banner__overlay"></div>
+        <div class="wrap-center">
+            <div class="banner-centered text-lviolet" id="banner-text">
+                <h2 class="vina text-lviolet text-8xl" style="letter-spacing: -0.2rem;">And so you search <br>for that taste again<br>Longing for its <br>intoxicating charm</h2>
+                <br><br><span class="inter text-lviolet mt-8 text-2xl">And you try it again, and again, and again</span>
+            </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <!-- <div class="left"></div>
+      <div class="right"></div> -->
+      <div class="flex falling bg-green text-lviolet">
+        <div class="box1 centered-container">
+          <img src="./img/person1.png" class="person1">
+          <img src="./img/person2.png" class="person2">
+          <img src="./img/hole2.png" class="hole2">
+          <!-- <img src="./img/hole.png" class="hole1"> -->
+        </div>
+      
+        <div class="box2 mt-24 pl-24 pr-48">
+          <!-- Content for the second div goes here -->
+          <h2 class="vina text-8xl" style="letter-spacing: -0.25rem; text-transform: uppercase;">You chase that high<br>to satisfy your now <br>unsatisfiable desire<br>for it
+          </h2><br><br>
+          <p class="inter text-2xl">Yet that light at the end of the tunnel that you<br>so tirelessly chase never gets any closer,<br>no matter how hard you run for it.
+            </p>
+      </div>
+    </article>
+    <article>
+      <div id="banner1">
+        <div class="banner__overlay"></div>
+        <div class="wrap-center">
+          <br><br><br><br><br><br>
+          <br><br><br><br><br><br>
+          <br><br><br><br><br><br>
+          <br><br><br><br><br><br>
+            <div class="banner-centered text-lviolet" id="banner-text">
+                <h2 class="inter text-lviolet text-4xl" style="font-weight: 500;">There is no<br>single personality trait<br>that can lead to addiction. </h2>
+                <br><span class="vina text-lviolet mt-8 text-8xl" style="text-transform: uppercase; letter-spacing: -0.2rem;">Rather, addiction<br>is rooted in various<br>characteristics and traits.</span>
+            </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class="scroller1"> 
+        <img src="./img/photo1.webp" class="scroll_img1">
+        <img src="./img/photo2.webp" class="scroll_img2">
+        <img src="./img/photo3.webp" class="scroll_img3">
+        <img src="./img/photo4.webp" class="scroll_img4">
+        <div class="circle_scroll_left1"></div>
+        <div class="desc_pane_left1"></div>
+        <div class="title_left1 vina black text-green text-7xl" style="text-transform: uppercase; letter-spacing: -0.25rem;">People who suffer from addictive behaviors generally show the following personality traits:
+        </div>
+        <div class="desc1_1 inter black text-green"><img src="./img/arrow.png" class="arrow1">Open to new experiences or adventurous in nature
+        </div>
+        <div class="desc1_2 inter black text-green"><img src="./img/arrow.png" class="arrow2">Low conscientiousness or low levels of mindfulness and control
+        </div>
+        <div class="desc1_3 inter black text-green"><img src="./img/arrow.png" class="arrow3">Disagreeableness or not conforming to social rules
+        </div>
+        <div class="desc1_4 inter black text-green"><img src="./img/arrow.png" class="arrow4">Neuroticism or emotional instability and moodiness
+        </div>
+      </div>
+      </div>
+      <div class="separator21"></div>
+    </article>
+    <article class="ch2_3">
+      <div class="block_question1 bg-blue">
+        <div class="parts text_1_2 vina">STRESS
+        </div>
+        <div class="parts text_2_2 vina">...IS CONSIDERED A RISK FACTOR FOR ADDICTION</div>
+      </div>
+      <div class="h-screen">
+      </div>
+    </article>
+    <!-- <article>
+      <div class="card_container">
+        <div class="scroll_cards2">
+          <div class="cards2 middler inter_font">
+            <img
+          class="scroll_side_img2"
+          src="./img/stress.png" />
+            <div class="card2 inter third2">⬤<br /><br>People who suffer from chronic stress, or a kind of stress that is prolonged and affects day-to-day living, may turn to substance abuse or other addictive behaviors in order to cope. 
+            </div>
+            <div class="card2 inter second2">⬤<br />They may intake stimulating substances in order to feel pleasure such as nicotine to dampen the stress that they are experiencing, or they may intake blunting substances such as alcohol to completely block out the effects of stress on their lives.</div>
+            <div class="card2 inter first2">⬤<br />Most people who suffer from substance abuse often report a stressful event or experience prior to their addiction.
+            </div>
+          </div>
+        </div>
+    </article> -->
     <article class="ch2-1">
       <div class="ch-intro2 bg-blue h-screen">
         <img src="./img/line.webp" class="h-48 o-0 uline2 mt-10 mb-10" alt="line">
@@ -95,6 +204,103 @@
         <span  class="gara o-0 ch2-desc font-normal ch-text text-green" style="font-size: 9rem;">THE TUG OF WAR</span>
         <img src="./img/line.webp" class="h-48 o-0 lline2 mb-10" alt="line">
       </div>
+    </article>
+    <article class="ch2_1">
+      <div class="image_cycle">
+        <img src="./img/cycle.png" class="cycler" alt="">
+      </div>
+    </article>
+    <article>
+      <div class="brain_container">
+        <canvas id="canvas"></canvas>
+      </div>
+      <div class="carousel inter">
+        <div class="carousel-item">
+          <div class="carousel-box">
+            <div class="title">Addiction alters the physical characteristics and functioning of the brain. </div>
+            <div class="num">01</div>
+            <img src="https://media.istockphoto.com/id/949299844/it/foto/vista-prospettica-dellesterno-delledificio-contemporaneo.jpg?s=612x612&w=0&k=20&c=_DR1aRHuTEV3EYBJo1ZXq1pF4SgwB9EVWQLaBj4sC5g=" />
+          </div>
+        </div>
+      
+        <div class="carousel-item">
+          <div class="carousel-box">
+            <div class="title">The reason why people become addicted to something has mainly to do with pleasure produced by these behaviours. </div>
+            <div class="num">02</div>
+            <img src="https://media.istockphoto.com/id/1150545984/it/foto/palazzo-moderno-di-lusso-con-piscina.jpg?s=612x612&w=0&k=20&c=Pbrai_VGc9tUviMCF1UaBErdS1YGyIVWsD29jzMZwTY=" />
+          </div>
+        </div>
+      
+        <div class="carousel-item">
+          <div class="carousel-box">
+            <div class="title">These pleasurable experiences are directly linked to the inner workings of the brain, particularly with neurotransmitters. </div>
+            <div class="num">03</div>
+            <img
+              src="https://media.istockphoto.com/id/1214351345/it/foto/guardando-direttamente-lo-skyline-del-quartiere-finanziario-nel-centro-di-londra-immagine-di.jpg?s=612x612&w=0&k=20&c=oNNbPzPvcQ-4RA6AeatNIxHQIafBiXmDRtUUY0Ska-I="
+            />
+          </div>
+        </div>
+      
+        <div class="carousel-item">
+          <div class="carousel-box">
+            <div class="title">Neurotransmitters are like messengers, they carry signals or messages from one part of the brain to the other.</div>
+            <div class="num">04</div>
+            <img src="https://media.istockphoto.com/id/904390980/it/foto/foto-di-architettura-contemporanea-astratta.jpg?s=612x612&w=0&k=20&c=_P4Wmx5nq5MeDuimpNklKCBlrLovmCyd9lfiMKeJZDs=" />
+          </div>
+        </div>
+      
+        <div class="carousel-item">
+          <div class="carousel-box">
+            <div class="title">Drugs alter what kind of neurotransmitter is sent and the quantity sent.</div>
+            <div class="num">05</div>
+            <img src="https://media.istockphoto.com/id/130408311/it/foto/piscina-allesterno-della-casa-moderna-al-crepuscolo.jpg?s=612x612&w=0&k=20&c=ZoVjx7uDjoHKmpM1ayW6UR1SQOoYh_xx-QMG_qeOYs0=" />
+          </div>
+        </div>
+      
+        <div class="carousel-item">
+          <div class="carousel-box">
+            <div class="title">One particular neurotransmitter most commonly associated with addiction is dopamine. </div>
+            <div class="num">06</div>
+            <img src="https://media.istockphoto.com/id/1299954175/it/foto/villa-cubica-moderna.jpg?s=612x612&w=0&k=20&c=DhGhb3c1E3DW_fbrWJ_R_Zh0Lbwu6syFeRLsKlZ9no8=" />
+          </div>
+        </div>
+      
+        <div class="carousel-item">
+          <div class="carousel-box">
+            <div class="title">Dopamine is a neurotransmitter that plays a role in motivation and pleasurable rewards.</div>
+            <div class="num">07</div>
+            <img src="https://media.istockphoto.com/id/926689776/it/foto/vista-ad-angolo-basso-dei-grattacieli-di-new-york.jpg?s=612x612&w=0&k=20&c=DmEB0Ty7ZwDnBoU5SuA8FNevOp4G1UcECw5aS4vA9A8=" />
+          </div>
+        </div>
+      
+        <div class="carousel-item">
+          <div class="carousel-box">
+            <div class="title"> It alters connections in the brain that makes it easier to repeat a behaviour over and over again. </div>
+            <div class="num">08</div>
+            <img src="https://media.istockphoto.com/id/1191376167/it/foto/villa-dellisola.jpg?s=612x612&w=0&k=20&c=PKslWo4FdbjinohKQlK_oWL34jqAsnzMTdy2bxEAf-I=" />
+          </div>
+        </div>
+      
+        <div class="carousel-item">
+          <div class="carousel-box">
+            <div class="title">This leads to habits and may end up as an addiction
+            </div>
+            <div class="num">09</div>
+            <img src="https://media.istockphoto.com/id/184316397/it/foto/londra-edifici-aziendali.jpg?s=612x612&w=0&k=20&c=XqrRxEPzFnwRFk7PQrCiu9-FPfCTPyMe5BKKaxYXCs8=" />
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-box">
+            <div class="title">London</div>
+            <div class="num">10</div>
+            <img src="https://media.istockphoto.com/id/184619832/it/foto/distretto-finanziario-al-crepuscolo-londra.jpg?s=612x612&w=0&k=20&c=RAThrJOBY6vhlT6-kQpu9-9jLEzWToYfdw46S8B0Mu0=" />
+          </div>
+        </div>
+      </div>
+      <div class="separator3_2"></div>
+      
+      
+      
     </article>
     <article class="ch3-1">
       <div class="ch-intro3 bg-lviolet h-screen">
