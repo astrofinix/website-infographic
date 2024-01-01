@@ -26,7 +26,8 @@ body {
 }
 .vina {
   font-family: "Vina Sans";
-  letter-spacing: -6px;
+  letter-spacing: -0.25rem;
+  text-transform: uppercase;
 }
 .gara {
   font-family: "Cormorant Garamond";
@@ -698,6 +699,30 @@ a {
   box-sizing: border-box;
   height: 150vh;
 }
+.box2_3 {
+  padding-top: 15vh;
+  width: 60%;
+  box-sizing: border-box;
+  height: 250vh;
+}
+.box2_3_2 {
+  width: 60%;
+  box-sizing: border-box;
+  height: 250vh;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.box3 {
+  width: 35%;
+  box-sizing: border-box;
+  height: 60vh;
+}
+.box4 {
+  width: 65%;
+  box-sizing: border-box;
+  height: 60vh;
+}
 .person1 {
   width: 20rem;
 }
@@ -838,13 +863,14 @@ a {
   background-color: var(--white);
   opacity: 1;
 }
-.separator3_2 {
+.separator2_3 {
   /* position: relative; */
-  height: 305vh;
+  height: 205vh;
   width: auto;
   background-color: var(--white);
   opacity: 1;
 }
+
 .card_container {
   display: block;
 }
@@ -856,25 +882,46 @@ a {
   height: 100vh;
 }
 .scroll_card2 {
+  display: block;
   padding-top: 10vh;
   padding-bottom: 10vh;
   width: 100%;
   color: var(--black);
-  height: 100vh;
+  height: 200vh;
 }
 .cards2 {
   position: relative;
-  height: 70vh;
-  width: 30vw;
-  /* float: left; */
+  /* height: 70vh;
+  width: 30vw; */
+  float: left;
 }
 .scroll_side_img2 {
+  width: 30vw;
   position: absolute;
   margin-left: 15vw;
   object-fit: cover;
   animation: rotateAnimation 4s linear infinite; /* Adjust the duration as needed */
 }
-
+.gift {
+  width: 20rem;
+  margin-top: 5rem;
+  animation: rotateAnimation 46s linear infinite;
+}
+.dice {
+  width: 20rem;
+  margin-top: 5rem;
+  animation: rotateAnimation 46s linear infinite;
+}
+.wine {
+  width: 30rem;
+  margin-top: 5rem;
+  animation: rotateAnimation 46s linear infinite;
+}
+.withdraw {
+  width: 20rem;
+  margin-top: 5rem;
+  animation: rotateAnimation 46s linear infinite;
+}
 @keyframes rotateAnimation {
   from {
     transform: rotate(0deg);
@@ -932,13 +979,13 @@ a {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  max-width: 100%;
   max-height: 100%;
+  mix-blend-mode: luminosity;
 }
 .brain_container {
-  width: 100vw;
+  padding-top: 5rem;
   height: 100vh;
-  background-color: #004542;
+  background-color: var(--green);
 }
 
 .carousel {
@@ -978,7 +1025,6 @@ a {
   z-index: 1;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
   opacity: var(--opacity);
@@ -990,7 +1036,6 @@ a {
   z-index: 1;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   background: linear-gradient(
     to bottom,
@@ -1026,7 +1071,6 @@ a {
   z-index: 0;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   pointer-events: none;
 }
@@ -1112,4 +1156,345 @@ a {
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+/* *, *:before, *:after {
+  box-sizing: border-box;
+} */
+
+/* body {
+  padding: 2em;
+  background: #003;
+  color: #fff;
+}
+ */
+ .wrapper {
+  max-width: 60em;
+  margin: 0 auto;
+  background-color: var(--green);
+}
+
+.scroll-cards {
+  counter-reset: card;
+  position: relative;
+  display: block;
+  padding-bottom: 80vh;
+}
+
+.scroll-cards > .scroll-cards__item + .scroll-cards__item {
+  margin-top: 40vh;
+}
+
+.scroll-cards h1 {
+  position: sticky;
+  top: 2rem;
+  font-size: 2em;
+  margin: 0 0 0.5em;
+}
+
+.scroll-cards__item {
+  /* font-size: 5rem; */
+  --offset: 0.5em;
+  color: var(--violet);
+  position: sticky;
+  top: max(16vh, 10em);
+  padding: 2em 1.5em;
+  min-height: 19em;
+  background: #fff;
+  width: calc(100% - 5 * var(--offset));
+  border-radius: 2rem;
+}
+
+h2 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* p {
+  font-size: 3rem;
+  line-height: 1.5;
+} */
+
+/*
+If you use SASS you can shorten this one here like this:
+
+@for $i from 0 through 5 {
+  &:nth-of-type(#{$i}) {
+    transform: translate(calc((#{$i} - 1) * var(--offset)), calc((#{$i} - 1) * var(--offset)));
+  }
+}
+*/
+.scroll-cards__item:nth-of-type(0) {
+  transform: translate(calc((0 - 1) * var(--offset)), calc((0 - 1) * var(--offset)));
+  background: var(--blue); /* Orange background for the first card */
+}
+.scroll-cards__item:nth-of-type(1) {
+  transform: translate(calc((1 - 1) * var(--offset)), calc((1 - 1) * var(--offset)));
+  background: var(--lgreen); /* Green background for the second card */
+}
+.scroll-cards__item:nth-of-type(2) {
+  transform: translate(calc((2 - 1) * var(--offset)), calc((2 - 1) * var(--offset)));
+  background: var(--lred); /* Purple background for the third card */
+}
+.scroll-cards__item:nth-of-type(3) {
+  transform: translate(calc((3 - 1) * var(--offset)), calc((3 - 1) * var(--offset)));
+  background: var(--yellow); /* Yellow background for the fourth card */
+}
+.scroll-cards__item:nth-of-type(4) {
+  transform: translate(calc((4 - 1) * var(--offset)), calc((4 - 1) * var(--offset)));
+  background: var(--lviolet); /* Pink background for the fifth card */
+}
+.scroll-cards__item:nth-of-type(5) {
+  transform: translate(calc((5 - 1) * var(--offset)), calc((5 - 1) * var(--offset)));
+  background: var(--blue); /* Cyan background for the sixth card */
+}
+.scroll-cards__item:nth-of-type(6) {
+  transform: translate(calc((6 - 1) * var(--offset)), calc((6 - 1) * var(--offset)));
+  background: var(--lgreen); /* Cyan background for the sixth card */
+}
+.scroll-cards__item:nth-of-type(7) {
+  transform: translate(calc((7 - 1) * var(--offset)), calc((7 - 1) * var(--offset)));
+  background: var(--red); /* Cyan background for the sixth card */
+}
+.scroll-cards__item:nth-of-type(8) {
+  transform: translate(calc((8 - 1) * var(--offset)), calc((8 - 1) * var(--offset)));
+  background: var(--yellow); /* Cyan background for the sixth card */
+}
+
+
+
+@media screen and (min-width: 37em) {
+  h1 {
+    font-size: 3em;
+  }
+  .scroll-cards__item {
+    --offset: 1em;
+    padding-left: 5em;
+  }
+  .scroll-cards__item:before {
+    counter-increment: card;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75em;
+    height: 2.75em;
+    background: #f09;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 1.25em;
+    top: 1.25em;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .scroll-cards h1 {
+    font-size: 3em;
+  }
+  .scroll-cards__item {
+    --offset: 1.25em;
+    max-width: 65rem;
+    height: 35rem;
+  }
+}
+:root {
+	--card-height: 40vw;
+	--card-margin: 4vw;
+	--card-top-offset: 1em;
+	--numcards: 4;
+	--outline-width: 0px;
+}
+
+#cards {
+	padding-bottom: calc(var(--numcards) * var(--card-top-offset)); /* Make place at bottom, as items will slide to that position*/
+	margin-bottom: var(--card-margin); /* Don't include the --card-margin in padding, as that will affect the scroll-timeline*/
+}
+
+#card_1 {
+	--index: 1;
+}
+
+#card_2 {
+	--index: 2;
+}
+
+#card_3 {
+	--index: 3;
+}
+
+#card_4 {
+	--index: 4;
+}
+
+.card {
+	position: sticky;
+	top: 0;
+	padding-top: calc(var(--index) * var(--card-top-offset));
+}
+
+@supports (animation-timeline: works) {
+
+	@scroll-timeline cards-element-scrolls-in-body {
+		source: selector(body);
+		scroll-offsets:
+			/* Start when the start edge touches the top of the scrollport */
+			selector(#cards) start 1,
+			/* End when the start edge touches the start of the scrollport */
+			selector(#cards) start 0
+		;
+		start: selector(#cards) start 1; /* Start when the start edge touches the top of the scrollport */
+		end: selector(#cards) start 0; /* End when the start edge touches the start of the scrollport */
+		time-range: 4s;
+	}
+
+	.card {
+		--index0: calc(var(--index) - 1); /* 0-based index */
+		--reverse-index: calc(var(--numcards) - var(--index0)); /* reverse index */
+		--reverse-index0: calc(var(--reverse-index) - 1); /* 0-based reverse index */
+	}
+	
+	.card__content {
+    margin-top: 3rem;
+    height: 50vh;
+    font-family: 'Inter';
+		transform-origin: 50% 0%;
+		will-change: transform;
+
+		--duration: calc(var(--reverse-index0) * 1s);
+		--delay: calc(var(--index0) * 1s);
+
+		animation: var(--duration) linear scale var(--delay) forwards;
+		animation-timeline: cards-element-scrolls-in-body;
+	}
+
+	@keyframes scale {
+		to {
+			transform:
+				scale(calc(
+					1.1
+					-
+					calc(0.1 * var(--reverse-index))
+				));
+		}
+	}
+}
+
+#cards {
+	list-style: none;
+	outline: calc(var(--outline-width) * 10) solid blue;
+	
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(var(--numcards), var(--card-height));
+	gap: var(--card-margin);
+}
+
+.card {
+	outline: var(--outline-width) solid hotpink;
+}
+
+.card__content {
+	color: rgb(10, 5, 7);
+	border-radius: 1em;
+	overflow: hidden;
+  height: 50vh;
+	/* display: grid;
+	grid-template-areas: "text img";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto; */
+
+	align-items: stretch;
+	outline: var(--outline-width) solid lime;
+}
+
+.card__content > div {
+	grid-area: text;
+	width: 80%;
+	place-self: center;
+	text-align: left;
+
+	display: grid;
+	gap: 1em;
+	place-items: start;
+}
+
+.card__content > figure {
+	grid-area: img;
+	overflow: hidden;
+}
+
+.card__content > figure > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/* marquee {
+  width: 100vw;
+  height: 100vh;
+} */
+.typewrite {
+  text-decoration: none;
+}
+.ch2_3 {
+  padding-left: 15vw;
+  font-size: 10rem;
+  width: 100vw;
+  height: 100vh;
+  line-height: 8rem;
+  color: #ddf6e6;
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+}
+.border {
+  width: 100vw;
+  background-color: var(--yellow);
+}
+.dialogue {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--yellow);
+}
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: -60vw;
+  max-width: 100%;
+  max-height: 100%;
+}
+.liked {
+  position: absolute;
+  left: -70vw;
+}
+
+.div2 {
+  padding: 10vh;
+  display: flex;
+  height: 100vh;
+  width: 240vw;
+  position: relative;
+  /* background-color: var(--yellow); */
+}
+.div2 div {
+  width: 50vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.docu_img {
+  width: 28vw;
+  height: 70vh;
+  border-radius: 2vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  object-fit: cover;
+}
+.docu_img2 {
+  width: 45vw;
+  height: 70vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  object-fit: cover;
 }

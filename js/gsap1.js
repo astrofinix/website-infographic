@@ -347,56 +347,56 @@ tl22.add('stage4')
   opacity:  1,
 }, 'stage4');
 
-const tl12 = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".cards2",
-    pin: true,
-    start: "top 10%",
-    end: "bottom+=1000 bottom",
-    scrub: true
-  }
-});
+// const tl12 = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".cards2",
+//     pin: true,
+//     start: "top 10%",
+//     end: "bottom+=1000 bottom",
+//     scrub: true
+//   }
+// });
 
 
-let question_bg1 = document.querySelector(".block_question1");
-let text_1_2 = document.querySelector(".text_1_2");
-let text_2_2 = document.querySelector(".text_2_2");
+// let question_bg1 = document.querySelector(".block_question1");
+// let text_1_2 = document.querySelector(".text_1_2");
+// let text_2_2 = document.querySelector(".text_2_2");
 
 
-let tl13 = gsap.timeline({
-   scrollTrigger: {
-     trigger: ".block_question1",
-     start: "center center",
-     end: "+=100%",
-     scrub: true,
-     pin: true,
-     opacity: 1,
-     zIndex:100,
-     pinSpacing: false,
-   },
- });
+// let tl13 = gsap.timeline({
+//    scrollTrigger: {
+//      trigger: ".block_question1",
+//      start: "center center",
+//      end: "+=100%",
+//      scrub: true,
+//      pin: true,
+//      opacity: 1,
+//      zIndex:100,
+//      pinSpacing: false,
+//    },
+//  });
 
- tl2.to(text_1_2, {
-   display: "block",
- });
+//  tl2.to(text_1_2, {
+//    display: "block",
+//  });
  
- tl2.to(question_bg1, {
-   backgroundColor: "#d6f0ff",
- }).to(text_1_2, {
-   opacity: 0,
- }).to(text_2_2, {
-   opacity: 1,
-   scale: 1.1,
-   display: "block",
- });
+//  tl2.to(question_bg1, {
+//    backgroundColor: "#d6f0ff",
+//  }).to(text_1_2, {
+//    opacity: 0,
+//  }).to(text_2_2, {
+//    opacity: 1,
+//    scale: 1.1,
+//    display: "block",
+//  });
 
- tl2.to(question_bg1, {
-   backgroundColor: "#d6f0ff",
- }).to(text_2_2, {
-   scale: 1,
-   display: "none",
-   opacity:0,
- });
+//  tl2.to(question_bg1, {
+//    backgroundColor: "#d6f0ff",
+//  }).to(text_2_2, {
+//    scale: 1,
+//    display: "none",
+//    opacity:0,
+//  });
 // tl12.to(".third2", {
 //   y: "90vh",
 //   delay: -0.2
@@ -432,15 +432,171 @@ let tl13 = gsap.timeline({
 //   });
 
 // })(jQuery);
-let tl14 = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".carousel",
-    start: "center center",
-    end: "+=300%",
-    scrub: true,
-    pin: true,
-    opacity: 1,
-    zIndex:100,
-    pinSpacing: false,
-  },
-});
+// let tl14 = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".carousel",
+//     start: "center center",
+//     end: "+=300%",
+//     scrub: true,
+//     pin: true,
+//     opacity: 1,
+//     zIndex:100,
+//     pinSpacing: false,
+//   },
+// });
+// This was built using aat.js: https://github.com/TahaSh/aat
+
+// const { ScrollObserver, valueAtPercentage } = aat
+
+// const cardsContainer = document.querySelector('.cards')
+// const cards = document.querySelectorAll('.card')
+// cardsContainer.style.setProperty('--cards-count', cards.length)
+// cardsContainer.style.setProperty(
+//   '--card-height',
+//   `${cards[0].clientHeight}px`
+// )
+// Array.from(cards).forEach((card, index) => {
+//   const offsetTop = 20 + index * 20
+//   card.style.paddingTop = `${offsetTop}px`
+//   if (index === cards.length - 1) {
+//     return
+//   }
+//   const toScale = 1 - (cards.length - 1 - index) * 0.1
+//   const nextCard = cards[index + 1]
+//   const cardInner = card.querySelector('.card__inner')
+//   ScrollObserver.Element(nextCard, {
+//     offsetTop,
+//     offsetBottom: window.innerHeight - card.clientHeight
+//   }).onScroll(({ percentageY }) => {
+//     cardInner.style.scale = valueAtPercentage({
+//       from: 1,
+//       to: toScale,
+//       percentage: percentageY
+//     })
+//     cardInner.style.filter = `brightness(${valueAtPercentage({
+//       from: 1,
+//       to: 0.6,
+//       percentage: percentageY
+//     })})`
+//   })
+// })
+
+var TxtType = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtType.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+  this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+  this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 100 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+  delta = this.period;
+  this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+  this.isDeleting = false;
+  this.loopNum++;
+  delta = 500;
+  }
+
+  setTimeout(function() {
+  that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('typewrite');
+  for (var i=0; i<elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-type');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtType(elements[i], JSON.parse(toRotate), period);
+      }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+  document.body.appendChild(css);
+};
+
+let hand = document.querySelector(".overlay-image");
+let liked = document.querySelector(".liked");
+
+  let tl9 = gsap.timeline({
+     scrollTrigger: {
+       trigger: ".dialogue",
+       start: "center center",
+       end: "+=25%",
+       scrub: true,
+       pin: true,
+       opacity: 1,
+       zIndex:100,
+       pinSpacing: false,
+     },
+   });
+tl9.add('start')
+
+.to(hand, {
+  x: "+130vw",
+  delay: 0,
+}, 'start')
+.to(liked, {
+  x: "+72vw",
+  delay: 0,
+}, 'start');
+
+var vwWidth = window.innerWidth;
+
+var controller = new ScrollMagic.Controller();
+
+//scene 1
+//for parallax scroll
+var parallaxScrolling = new TimelineMax()
+  .to(".div1", 1, {y: 100, ease: Power1.easeOut})
+
+new ScrollMagic.Scene({
+  triggerElement: ".div1",
+  duration: "100%",
+  offset: 0,
+  triggerHook: 0
+})
+.setTween(parallaxScrolling)
+.addTo(controller)
+
+//scene 2 with horizontal scroll
+//for horizontal scrolling
+var horizontalSlide = new TimelineMax()
+  .to(".div2", 0.2,   {x: 0, ease: Power1.easeOut}, )
+  .to(".div2", 1,   {x: -vwWidth, ease: Power1.easeOut}, )	
+  .to(".div2", 0.2,   {x: -vwWidth, ease: Power1.easeOut}, )
+  .to(".div2", 1,   {x: -2*vwWidth, ease: Power1.easeOut}, )
+  .to(".div2", 0.2,   {x: -2*vwWidth, ease: Power1.easeOut}, )
+
+new ScrollMagic.Scene({
+  triggerElement: ".div2",
+  duration: "160%",
+  offset: 0,
+  triggerHook: -0.02
+})
+.setPin('.div2')
+.setTween(horizontalSlide)
+.addTo(controller)

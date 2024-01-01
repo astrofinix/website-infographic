@@ -1,7 +1,7 @@
 let canvas = document.querySelector('canvas');
 let ctx = canvas.getContext('2d');
 
-// const colors = ["#82FFEB", "#549FCC", "#116699", "#FFCAC2", "#CC5456"];
+const colors = ["#ddf6e6", "#deddff", "#ffffff", "#ffccd3", "#fff5e3"];
 
 function resize() {
   canvas.width = 1920;
@@ -311,7 +311,7 @@ var savedBrain = {
   "neurons": [{
     "x": 376,
     "y": 445,
-    "color": "#FFCAC2",
+    "color": "#ffccd3",
     "size": 26.455622748419316,
     "baseSize": 21,
     "sizeVelocity": 6.560907665073449,
@@ -319,7 +319,7 @@ var savedBrain = {
   }, {
     "x": 387,
     "y": 584,
-    "color": "#82FFEB",
+    "color": "#ddf6e6",
     "size": 24.63851824824756,
     "baseSize": 24,
     "sizeVelocity": -2.73313331133454,
@@ -327,7 +327,7 @@ var savedBrain = {
   }, {
     "x": 441,
     "y": 649,
-    "color": "#FFCAC2",
+    "color": "#ffccd3",
     "size": 22.10982235873398,
     "baseSize": 22,
     "sizeVelocity": 0.22775200611691285,
@@ -335,7 +335,7 @@ var savedBrain = {
   }, {
     "x": 524,
     "y": 665,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 26.814863586319206,
     "baseSize": 24,
     "sizeVelocity": 37.977812675096075,
@@ -343,7 +343,7 @@ var savedBrain = {
   }, {
     "x": 642,
     "y": 623,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 20.08654820091062,
     "baseSize": 21,
     "sizeVelocity": -12.827048645953411,
@@ -351,7 +351,7 @@ var savedBrain = {
   }, {
     "x": 686,
     "y": 724,
-    "color": "#82FFEB",
+    "color": "#ddf6e6",
     "size": 20.016742053261442,
     "baseSize": 20,
     "sizeVelocity": 0.0816523558105102,
@@ -359,7 +359,7 @@ var savedBrain = {
   }, {
     "x": 730,
     "y": 794,
-    "color": "#CC5456",
+    "color": "#fff5e3",
     "size": 20.99999983379364,
     "baseSize": 21,
     "sizeVelocity": 0.000014465027558586292,
@@ -367,7 +367,7 @@ var savedBrain = {
   }, {
     "x": 833,
     "y": 810,
-    "color": "#82FFEB",
+    "color": "#ddf6e6",
     "size": 23.00000003897314,
     "baseSize": 23,
     "sizeVelocity": 1.9585827370123003e-8,
@@ -375,7 +375,7 @@ var savedBrain = {
   }, {
     "x": 948,
     "y": 779,
-    "color": "#549FCC",
+    "color": "#deddff",
     "size": 22.888969982354897,
     "baseSize": 23,
     "sizeVelocity": -2.4216046270564453,
@@ -383,7 +383,7 @@ var savedBrain = {
   }, {
     "x": 1065,
     "y": 756,
-    "color": "#82FFEB",
+    "color": "#ddf6e6",
     "size": 23.002116601443756,
     "baseSize": 23,
     "sizeVelocity": -0.012222358504237613,
@@ -391,7 +391,7 @@ var savedBrain = {
   }, {
     "x": 1134,
     "y": 839,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 24.91775033773531,
     "baseSize": 22,
     "sizeVelocity": -20.248881556227456,
@@ -399,7 +399,7 @@ var savedBrain = {
   }, {
     "x": 1197,
     "y": 935,
-    "color": "#CC5456",
+    "color": "#fff5e3",
     "size": 25.68181462080287,
     "baseSize": 21,
     "sizeVelocity": 16.214859976865018,
@@ -407,7 +407,7 @@ var savedBrain = {
   }, {
     "x": 1268,
     "y": 913,
-    "color": "#82FFEB",
+    "color": "#ddf6e6",
     "size": 21.15163905871484,
     "baseSize": 21,
     "sizeVelocity": -3.4051276023479984,
@@ -415,7 +415,7 @@ var savedBrain = {
   }, {
     "x": 1261,
     "y": 803,
-    "color": "#82FFEB",
+    "color": "#ddf6e6",
     "size": 24.026734268412127,
     "baseSize": 24,
     "sizeVelocity": -0.5264671334414075,
@@ -423,7 +423,7 @@ var savedBrain = {
   }, {
     "x": 1260,
     "y": 726,
-    "color": "#549FCC",
+    "color": "#deddff",
     "size": 19.999999951124813,
     "baseSize": 20,
     "sizeVelocity": 4.4393558077772617e-7,
@@ -431,7 +431,7 @@ var savedBrain = {
   }, {
     "x": 1328,
     "y": 660,
-    "color": "#FFCAC2",
+    "color": "#ffccd3",
     "size": 20.985409195571535,
     "baseSize": 21,
     "sizeVelocity": 0.20667601898597915,
@@ -439,7 +439,7 @@ var savedBrain = {
   }, {
     "x": 1401,
     "y": 555,
-    "color": "#FFCAC2",
+    "color": "#ffccd3",
     "size": 23.996879238800393,
     "baseSize": 24,
     "sizeVelocity": 0.03262522354000523,
@@ -447,7 +447,7 @@ var savedBrain = {
   }, {
     "x": 1492,
     "y": 490,
-    "color": "#FFCAC2",
+    "color": "#ffccd3",
     "size": 20.101088044991066,
     "baseSize": 20,
     "sizeVelocity": 0.3956683086869978,
@@ -455,7 +455,7 @@ var savedBrain = {
   }, {
     "x": 1516,
     "y": 375,
-    "color": "#549FCC",
+    "color": "#deddff",
     "size": 23.068504866629347,
     "baseSize": 23,
     "sizeVelocity": -1.045489165274042,
@@ -463,7 +463,7 @@ var savedBrain = {
   }, {
     "x": 1487,
     "y": 256,
-    "color": "#FFCAC2",
+    "color": "#ffccd3",
     "size": 19.238057635757833,
     "baseSize": 20,
     "sizeVelocity": 7.571514094354629,
@@ -471,7 +471,7 @@ var savedBrain = {
   }, {
     "x": 1395,
     "y": 156,
-    "color": "#549FCC",
+    "color": "#deddff",
     "size": 22.28095071888947,
     "baseSize": 24,
     "sizeVelocity": 3.4498972793266307,
@@ -479,7 +479,7 @@ var savedBrain = {
   }, {
     "x": 1250,
     "y": 86,
-    "color": "#82FFEB",
+    "color": "#ddf6e6",
     "size": 25.150801750834244,
     "baseSize": 20,
     "sizeVelocity": 0.2009795501056679,
@@ -487,7 +487,7 @@ var savedBrain = {
   }, {
     "x": 1319,
     "y": 114,
-    "color": "#FFCAC2",
+    "color": "#ffccd3",
     "size": 22.15186467503173,
     "baseSize": 21,
     "sizeVelocity": -23.18749403729649,
@@ -495,7 +495,7 @@ var savedBrain = {
   }, {
     "x": 1120,
     "y": 56,
-    "color": "#549FCC",
+    "color": "#deddff",
     "size": 23.77334754813871,
     "baseSize": 24,
     "sizeVelocity": 14.734162408963423,
@@ -503,7 +503,7 @@ var savedBrain = {
   }, {
     "x": 986,
     "y": 48,
-    "color": "#CC5456",
+    "color": "#fff5e3",
     "size": 22.206245853906413,
     "baseSize": 23,
     "sizeVelocity": 10.66941649710156,
@@ -511,7 +511,7 @@ var savedBrain = {
   }, {
     "x": 850,
     "y": 48,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 21.41422172755512,
     "baseSize": 21,
     "sizeVelocity": -3.55969816381217,
@@ -519,7 +519,7 @@ var savedBrain = {
   }, {
     "x": 394,
     "y": 318,
-    "color": "#CC5456",
+    "color": "#fff5e3",
     "size": 21.99999931130018,
     "baseSize": 22,
     "sizeVelocity": 0.0000027478084264593752,
@@ -527,7 +527,7 @@ var savedBrain = {
   }, {
     "x": 437,
     "y": 203,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 19.99997289474867,
     "baseSize": 20,
     "sizeVelocity": 0.00007357819779470998,
@@ -535,7 +535,7 @@ var savedBrain = {
   }, {
     "x": 515,
     "y": 126,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 20.00000024960325,
     "baseSize": 20,
     "sizeVelocity": -7.843427462267571e-7,
@@ -543,7 +543,7 @@ var savedBrain = {
   }, {
     "x": 617,
     "y": 80,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 26.19844915249819,
     "baseSize": 21,
     "sizeVelocity": 0.16864663583996137,
@@ -551,7 +551,7 @@ var savedBrain = {
   }, {
     "x": 708,
     "y": 56,
-    "color": "#549FCC",
+    "color": "#deddff",
     "size": 23.070576716850855,
     "baseSize": 23,
     "sizeVelocity": 0.7437897635525182,
@@ -559,7 +559,7 @@ var savedBrain = {
   }, {
     "x": 1156,
     "y": 712,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 18.31500907341345,
     "baseSize": 20,
     "sizeVelocity": 4.303014621663821,
@@ -567,7 +567,7 @@ var savedBrain = {
   }, {
     "x": 791,
     "y": 700,
-    "color": "#549FCC",
+    "color": "#deddff",
     "size": 26.141270218388534,
     "baseSize": 22,
     "sizeVelocity": 27.338688200702997,
@@ -575,7 +575,7 @@ var savedBrain = {
   }, {
     "x": 753,
     "y": 596,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 23.0713603080354,
     "baseSize": 23,
     "sizeVelocity": 0.7346451797049292,
@@ -583,7 +583,7 @@ var savedBrain = {
   }, {
     "x": 674,
     "y": 526,
-    "color": "#82FFEB",
+    "color": "#ddf6e6",
     "size": 29.562506697067068,
     "baseSize": 24,
     "sizeVelocity": -3.5068210595186837,
@@ -591,7 +591,7 @@ var savedBrain = {
   }, {
     "x": 564,
     "y": 552,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 22.94021501233854,
     "baseSize": 23,
     "sizeVelocity": -1.9343820243065486,
@@ -599,7 +599,7 @@ var savedBrain = {
   }, {
     "x": 477,
     "y": 547,
-    "color": "#FFCAC2",
+    "color": "#ffccd3",
     "size": 22.91336179300218,
     "baseSize": 23,
     "sizeVelocity": 1.6505039940548523,
@@ -607,7 +607,7 @@ var savedBrain = {
   }, {
     "x": 498,
     "y": 421,
-    "color": "#549FCC",
+    "color": "#deddff",
     "size": 21.769978843018915,
     "baseSize": 22,
     "sizeVelocity": -1.3787275043969265,
@@ -615,7 +615,7 @@ var savedBrain = {
   }, {
     "x": 509,
     "y": 285,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 20.999087237029855,
     "baseSize": 21,
     "sizeVelocity": 0.025546306548394095,
@@ -623,7 +623,7 @@ var savedBrain = {
   }, {
     "x": 585,
     "y": 168,
-    "color": "#CC5456",
+    "color": "#fff5e3",
     "size": 21.928542123755726,
     "baseSize": 22,
     "sizeVelocity": 0.8407180504301199,
@@ -631,7 +631,7 @@ var savedBrain = {
   }, {
     "x": 695,
     "y": 148,
-    "color": "#CC5456",
+    "color": "#fff5e3",
     "size": 21.700223815785687,
     "baseSize": 21,
     "sizeVelocity": 3.3907268663507457,
@@ -639,7 +639,7 @@ var savedBrain = {
   }, {
     "x": 815,
     "y": 139,
-    "color": "#CC5456",
+    "color": "#fff5e3",
     "size": 24.425965073743537,
     "baseSize": 24,
     "sizeVelocity": 3.771347080961098,
@@ -647,7 +647,7 @@ var savedBrain = {
   }, {
     "x": 981,
     "y": 140,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 21.99967831049685,
     "baseSize": 22,
     "sizeVelocity": 0.0046146482914818905,
@@ -655,7 +655,7 @@ var savedBrain = {
   }, {
     "x": 900,
     "y": 116,
-    "color": "#82FFEB",
+    "color": "#ddf6e6",
     "size": 21.466538447075052,
     "baseSize": 23,
     "sizeVelocity": -9.284195958835303,
@@ -663,7 +663,7 @@ var savedBrain = {
   }, {
     "x": 891,
     "y": 227,
-    "color": "#CC5456",
+    "color": "#fff5e3",
     "size": 23.096908182972808,
     "baseSize": 23,
     "sizeVelocity": -0.5046139226065987,
@@ -671,7 +671,7 @@ var savedBrain = {
   }, {
     "x": 760,
     "y": 234,
-    "color": "#CC5456",
+    "color": "#fff5e3",
     "size": 21.62863547056678,
     "baseSize": 21,
     "sizeVelocity": 8.933379098171006,
@@ -679,7 +679,7 @@ var savedBrain = {
   }, {
     "x": 641,
     "y": 251,
-    "color": "#FFCAC2",
+    "color": "#ffccd3",
     "size": 22.94905797859566,
     "baseSize": 23,
     "sizeVelocity": -0.026726982555308115,
@@ -687,7 +687,7 @@ var savedBrain = {
   }, {
     "x": 610,
     "y": 367,
-    "color": "#FFCAC2",
+    "color": "#ffccd3",
     "size": 21.994156434366143,
     "baseSize": 22,
     "sizeVelocity": -0.6478103629854453,
@@ -695,7 +695,7 @@ var savedBrain = {
   }, {
     "x": 614,
     "y": 462,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 21.889152655598288,
     "baseSize": 22,
     "sizeVelocity": -2.422088416701105,
@@ -703,7 +703,7 @@ var savedBrain = {
   }, {
     "x": 717,
     "y": 430,
-    "color": "#82FFEB",
+    "color": "#ddf6e6",
     "size": 28.303216304517186,
     "baseSize": 24,
     "sizeVelocity": -13.746490574042463,
@@ -711,7 +711,7 @@ var savedBrain = {
   }, {
     "x": 716,
     "y": 324,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 22.633360259755612,
     "baseSize": 24,
     "sizeVelocity": -16.449278773932093,
@@ -719,7 +719,7 @@ var savedBrain = {
   }, {
     "x": 824,
     "y": 333,
-    "color": "#FFCAC2",
+    "color": "#ffccd3",
     "size": 22.477560978200238,
     "baseSize": 22,
     "sizeVelocity": 4.866006568132217,
@@ -727,7 +727,7 @@ var savedBrain = {
   }, {
     "x": 806,
     "y": 467,
-    "color": "#82FFEB",
+    "color": "#ddf6e6",
     "size": 21.13150355946805,
     "baseSize": 21,
     "sizeVelocity": -0.4315034979340709,
@@ -735,7 +735,7 @@ var savedBrain = {
   }, {
     "x": 871,
     "y": 586,
-    "color": "#CC5456",
+    "color": "#fff5e3",
     "size": 20.000489906072872,
     "baseSize": 20,
     "sizeVelocity": 0.0006382945958895101,
@@ -743,7 +743,7 @@ var savedBrain = {
   }, {
     "x": 915,
     "y": 680,
-    "color": "#82FFEB",
+    "color": "#ddf6e6",
     "size": 20.9563013591019,
     "baseSize": 21,
     "sizeVelocity": 0.17261589221711038,
@@ -751,7 +751,7 @@ var savedBrain = {
   }, {
     "x": 1021,
     "y": 660,
-    "color": "#CC5456",
+    "color": "#fff5e3",
     "size": 26.7748895778653,
     "baseSize": 24,
     "sizeVelocity": -12.42104219268522,
@@ -759,7 +759,7 @@ var savedBrain = {
   }, {
     "x": 1156,
     "y": 601,
-    "color": "#CC5456",
+    "color": "#fff5e3",
     "size": 22.000155303970732,
     "baseSize": 22,
     "sizeVelocity": 0.0029544442668613677,
@@ -767,7 +767,7 @@ var savedBrain = {
   }, {
     "x": 1251,
     "y": 614,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 20.999999390459774,
     "baseSize": 21,
     "sizeVelocity": 0.0000022977665667642354,
@@ -775,7 +775,7 @@ var savedBrain = {
   }, {
     "x": 1291,
     "y": 518,
-    "color": "#82FFEB",
+    "color": "#ddf6e6",
     "size": 19.99999998632102,
     "baseSize": 20,
     "sizeVelocity": 6.637475787565636e-8,
@@ -783,7 +783,7 @@ var savedBrain = {
   }, {
     "x": 1384,
     "y": 442,
-    "color": "#FFCAC2",
+    "color": "#ffccd3",
     "size": 23.003957613774777,
     "baseSize": 23,
     "sizeVelocity": 7.6111281515961435,
@@ -791,7 +791,7 @@ var savedBrain = {
   }, {
     "x": 1371,
     "y": 302,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 21.90647396951751,
     "baseSize": 22,
     "sizeVelocity": 0.25768504097756995,
@@ -799,7 +799,7 @@ var savedBrain = {
   }, {
     "x": 1286,
     "y": 212,
-    "color": "#549FCC",
+    "color": "#deddff",
     "size": 24.841253905156886,
     "baseSize": 24,
     "sizeVelocity": 2.6448037868948138,
@@ -807,7 +807,7 @@ var savedBrain = {
   }, {
     "x": 1171,
     "y": 181,
-    "color": "#FFCAC2",
+    "color": "#ffccd3",
     "size": 21.32341453846905,
     "baseSize": 21,
     "sizeVelocity": -21.208143558808096,
@@ -815,7 +815,7 @@ var savedBrain = {
   }, {
     "x": 1070,
     "y": 138,
-    "color": "#FFCAC2",
+    "color": "#ffccd3",
     "size": 28.382681981628963,
     "baseSize": 24,
     "sizeVelocity": 10.162686796838527,
@@ -823,7 +823,7 @@ var savedBrain = {
   }, {
     "x": 1044,
     "y": 248,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 23.0021711266217,
     "baseSize": 23,
     "sizeVelocity": -0.011020157925986495,
@@ -831,7 +831,7 @@ var savedBrain = {
   }, {
     "x": 953,
     "y": 289,
-    "color": "#CC5456",
+    "color": "#fff5e3",
     "size": 18.690648998855295,
     "baseSize": 20,
     "sizeVelocity": 15.526954416074561,
@@ -839,7 +839,7 @@ var savedBrain = {
   }, {
     "x": 919,
     "y": 408,
-    "color": "#549FCC",
+    "color": "#deddff",
     "size": 24.77952541656673,
     "baseSize": 23,
     "sizeVelocity": -20.855836999764772,
@@ -847,7 +847,7 @@ var savedBrain = {
   }, {
     "x": 913,
     "y": 495,
-    "color": "#FFCAC2",
+    "color": "#ffccd3",
     "size": 20.9938752230798,
     "baseSize": 21,
     "sizeVelocity": 0.029961867319710924,
@@ -855,7 +855,7 @@ var savedBrain = {
   }, {
     "x": 975,
     "y": 564,
-    "color": "#FFCAC2",
+    "color": "#ffccd3",
     "size": 20.999159794750497,
     "baseSize": 21,
     "sizeVelocity": -0.004820991371114947,
@@ -863,7 +863,7 @@ var savedBrain = {
   }, {
     "x": 1022,
     "y": 429,
-    "color": "#CC5456",
+    "color": "#fff5e3",
     "size": 20.548716891707805,
     "baseSize": 23,
     "sizeVelocity": -0.403926466124024,
@@ -871,7 +871,7 @@ var savedBrain = {
   }, {
     "x": 1043,
     "y": 328,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 21.89625289447462,
     "baseSize": 22,
     "sizeVelocity": 8.153323712514343,
@@ -879,7 +879,7 @@ var savedBrain = {
   }, {
     "x": 1149,
     "y": 285,
-    "color": "#CC5456",
+    "color": "#fff5e3",
     "size": 24.017405847096217,
     "baseSize": 24,
     "sizeVelocity": -0.052820487436742565,
@@ -887,7 +887,7 @@ var savedBrain = {
   }, {
     "x": 1061,
     "y": 554,
-    "color": "#FFCAC2",
+    "color": "#ffccd3",
     "size": 24.825354881091645,
     "baseSize": 24,
     "sizeVelocity": -0.1413493035242927,
@@ -895,7 +895,7 @@ var savedBrain = {
   }, {
     "x": 1125,
     "y": 481,
-    "color": "#CC5456",
+    "color": "#fff5e3",
     "size": 20.949771135605836,
     "baseSize": 21,
     "sizeVelocity": 0.03760070824713778,
@@ -903,7 +903,7 @@ var savedBrain = {
   }, {
     "x": 1216,
     "y": 467,
-    "color": "#82FFEB",
+    "color": "#ddf6e6",
     "size": 20.70573332178859,
     "baseSize": 21,
     "sizeVelocity": 0.052403770640170926,
@@ -911,7 +911,7 @@ var savedBrain = {
   }, {
     "x": 1290,
     "y": 396,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 21.998250624685628,
     "baseSize": 22,
     "sizeVelocity": -0.05081713457391027,
@@ -919,7 +919,7 @@ var savedBrain = {
   }, {
     "x": 1240,
     "y": 301,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 22.999990941337543,
     "baseSize": 23,
     "sizeVelocity": -0.0014195555085098096,
@@ -927,7 +927,7 @@ var savedBrain = {
   }, {
     "x": 1148,
     "y": 384,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 20.0393699006523,
     "baseSize": 20,
     "sizeVelocity": 0.9775956960240738,
@@ -935,7 +935,7 @@ var savedBrain = {
   }, {
     "x": 1343,
     "y": 747,
-    "color": "#CC5456",
+    "color": "#fff5e3",
     "size": 22.017937925004883,
     "baseSize": 22,
     "sizeVelocity": -0.05879662715346789,
@@ -943,7 +943,7 @@ var savedBrain = {
   }, {
     "x": 1369,
     "y": 937,
-    "color": "#116699",
+    "color": "#ffffff",
     "size": 20.99997519885429,
     "baseSize": 21,
     "sizeVelocity": -0.00006499920326246528,
@@ -951,7 +951,7 @@ var savedBrain = {
   }, {
     "x": 1380,
     "y": 836,
-    "color": "#82FFEB",
+    "color": "#ddf6e6",
     "size": 19.721983707771994,
     "baseSize": 20,
     "sizeVelocity": -0.9063763022541759,
@@ -959,7 +959,7 @@ var savedBrain = {
   }, {
     "x": 1419,
     "y": 698,
-    "color": "#FFCAC2",
+    "color": "#ffccd3",
     "size": 20.108908758823972,
     "baseSize": 22,
     "sizeVelocity": -2.51506948367178,
@@ -967,7 +967,7 @@ var savedBrain = {
   }, {
     "x": 1467,
     "y": 590,
-    "color": "#CC5456",
+    "color": "#fff5e3",
     "size": 24.000000000149345,
     "baseSize": 24,
     "sizeVelocity": 1.6805301465865905e-10,
@@ -975,7 +975,7 @@ var savedBrain = {
   }, {
     "x": 1494,
     "y": 745,
-    "color": "#FFCAC2",
+    "color": "#ffccd3",
     "size": 19.889083429471288,
     "baseSize": 20,
     "sizeVelocity": -2.4213853855926697,
@@ -983,7 +983,7 @@ var savedBrain = {
   }, {
     "x": 1546,
     "y": 637,
-    "color": "#FFCAC2",
+    "color": "#ffccd3",
     "size": 19.849911473431963,
     "baseSize": 20,
     "sizeVelocity": 1.4538014887845294,
@@ -991,7 +991,7 @@ var savedBrain = {
   }, {
     "x": 1616,
     "y": 550,
-    "color": "#82FFEB",
+    "color": "#ddf6e6",
     "size": 19.99594201548369,
     "baseSize": 20,
     "sizeVelocity": 0.033215946826409354,
@@ -999,7 +999,7 @@ var savedBrain = {
   }, {
     "x": 1633,
     "y": 442,
-    "color": "#549FCC",
+    "color": "#deddff",
     "size": 25.476764474697237,
     "baseSize": 22,
     "sizeVelocity": -6.261381506069824,
@@ -1007,7 +1007,7 @@ var savedBrain = {
   }, {
     "x": 1579,
     "y": 331,
-    "color": "#549FCC",
+    "color": "#deddff",
     "size": 21.358899623040003,
     "baseSize": 21,
     "sizeVelocity": -11.225191914557769,
@@ -1015,7 +1015,7 @@ var savedBrain = {
   }, {
     "x": 1525,
     "y": 208,
-    "color": "#549FCC",
+    "color": "#deddff",
     "size": 20.672317345403123,
     "baseSize": 20,
     "sizeVelocity": 6.969458512451043,
@@ -1023,7 +1023,7 @@ var savedBrain = {
   }, {
     "x": 1428,
     "y": 337,
-    "color": "#CC5456",
+    "color": "#fff5e3",
     "size": 21.132853539884497,
     "baseSize": 23,
     "sizeVelocity": -27.567790273458094,
