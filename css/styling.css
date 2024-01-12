@@ -1636,7 +1636,6 @@ p.finexc {
 }
 
 p.finexc  > span.finexc {
-	outline-color: hsl(10 80% 50%);
 	outline-offset: 1ch;
 	font-size: clamp(3rem, 4vw + 1rem, 10rem);
   color: var(--color);
@@ -1710,3 +1709,11 @@ section {
   }
 }
 
+.one {
+  height: 20vw;
+}
+.fini {
+  position: relative;
+  border-radius: 2vw;
+  top: 30;
+}
