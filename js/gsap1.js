@@ -600,3 +600,130 @@ new ScrollMagic.Scene({
 .setPin('.div2')
 .setTween(horizontalSlide)
 .addTo(controller)
+
+let question_bg2 = document.querySelector(".block_question2");
+let text_1_2 = document.querySelector(".text_1_2");
+let text_2_2 = document.querySelector(".text_2_2");
+let text_3_2 = document.querySelector(".text_3_2");
+let text_4_2 = document.querySelector(".text_4_2");
+
+let tl10 = gsap.timeline({
+   scrollTrigger: {
+     trigger: ".block_question2",
+     start: "center center",
+     end: "+=100%",
+     scrub: true,
+     pin: true,
+     opacity: 1,
+     zIndex:100,
+     pinSpacing: false,
+   },
+ });
+
+ tl10.to(text_1_2, {
+   display: "block",
+ });
+ 
+ tl10.to(question_bg2, {
+   backgroundColor: "#d4809b",
+ }).to(text_1_2, {
+   opacity: 0,
+ }).to(text_2_2, {
+   opacity: 1,
+   scale: 1.1,
+   display: "block",
+ });
+
+ tl10.to(question_bg2, {
+   backgroundColor: "#d4809b",
+ }).to(text_2_2, {
+   scale: 1,
+   display: "none",
+   opacity:0,
+ }).to(text_3_2, {
+   opacity: 1,
+   scale: 1.1,
+   display: "block",
+ });
+
+ tl10.to(question_bg2, {
+   backgroundColor: "#d4809b",
+ }).to(text_3_2, {
+   scale: 1,
+   display: "none",
+   opacity:0,
+ }).to(text_4_2, {
+   opacity: 1,
+   scale: 1.5,
+   display: "block",
+ });
+
+ let question_bg3 = document.querySelector(".block_question3");
+let text_1_3 = document.querySelector(".text_1_3");
+let text_2_3 = document.querySelector(".text_2_3");
+let text_3_3 = document.querySelector(".text_3_3");
+let text_4_3 = document.querySelector(".text_4_3");
+let text_5_3 = document.querySelector(".text_5_3");
+
+let tl11 = gsap.timeline({
+   scrollTrigger: {
+     trigger: ".block_question3",
+     start: "center center",
+     end: "+=100%",
+     scrub: true,
+     pin: true,
+     opacity: 1,
+     zIndex:100,
+     pinSpacing: false,
+   },
+ });
+
+ tl11.to(text_1_3, {
+   display: "block",
+ });
+ 
+ tl11.to(question_bg3, {
+   backgroundColor: "#ddf6e6",
+ }).to(text_1_3, {
+   opacity: 0,
+ }).to(text_2_3, {
+   opacity: 1,
+   scale: 1.1,
+   display: "block",
+ });
+
+ tl11.to(question_bg3, {
+   backgroundColor: "#ddf6e6",
+ }).to(text_2_3, {
+   scale: 1,
+   display: "none",
+   opacity:0,
+ }).to(text_3_3, {
+   opacity: 1,
+   scale: 1.1,
+   display: "block",
+ });
+
+ tl11.to(question_bg3, {
+   backgroundColor: "#ddf6e6",
+ }).to(text_3_3, {
+   scale: 1,
+   display: "none",
+   opacity:0,
+ }).to(text_4_3, {
+   opacity: 1,
+   scale: 0.8,
+   display: "block",
+ });
+
+ tl11.to(question_bg3, {
+  backgroundColor: "#ddf6e6",
+}).to(text_4_3, {
+  scale: 1,
+  display: "none",
+  opacity:0,
+}).to(text_5_3, {
+  opacity: 1,
+  scale: 0.8,
+  display: "block",
+});
