@@ -1712,6 +1712,9 @@ section {
 .one {
   height: 20vw;
 }
+.second {
+  height: 30vw;
+}
 .fini {
   position: relative;
   border-radius: 2vw;
